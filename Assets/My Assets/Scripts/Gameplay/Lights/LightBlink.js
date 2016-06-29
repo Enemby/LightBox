@@ -1,5 +1,6 @@
-﻿var waittime : float = 1;
-var Distance : float = 25;
+﻿//Basic script that blinks a light, to have a 'pretend' security camera light.
+﻿var waittime : float = 1; //How long do we wait between blinks?
+var Distance : float = 25; //If player is more than 'Distance' away, we turn off the light.
 function LightBlink(){
 	if(this.transform.Find("Light").GetComponent(Light).enabled == true){
 		yield WaitForSeconds(waittime/2);

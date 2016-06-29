@@ -1,7 +1,8 @@
-﻿var TargetTag : String = "Player";
-var clock : float;
-var VelocityLimit : float = 20;
-var Force : float = 20;
+﻿//Short script for a 'chasing' drone that never made it into the final game jam entry.
+﻿var TargetTag : String = "Player"; //What are we aiming for?
+var clock : float; //var for keeping time (no longer needed?)
+var VelocityLimit : float = 20; //The velocity we limit speed to
+var Force : float = 20; //The force we apply per frame
 
 function Timer(){
 if(clock > 1.2){
